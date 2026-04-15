@@ -1,0 +1,190 @@
+/* Reset & Global */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+  background-image:url("images/background.png");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+}
+
+
+/* SECTION */
+
+.toma-section{
+  width:100%;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  padding:40px 20px;
+}
+
+
+/* Hot Seller badge */
+
+.toma-badge{
+  margin-bottom:25px;
+}
+
+.toma-badge img{
+  width:140px;
+  height:auto;
+  display:block;
+}
+
+
+/* Title */
+
+.toma-title{
+  margin-bottom:25px;
+}
+
+.toma-title img{
+  width:100%;
+  max-width:280px;
+  height:auto;
+  display:block;
+}
+
+
+/* Description */
+
+.toma-desc{
+  margin-bottom:10px;
+}
+
+.toma-desc img{
+  width:100%;
+  max-width:320px;
+  height:auto;
+  display:block;
+}
+
+
+/* Product Image */
+
+.toma-image{
+  text-align:center;
+  margin-bottom:40px;
+}
+
+.toma-image img{
+  width:100%;
+  max-width:260px;
+  height:auto;
+  object-fit:contain;
+  margin-top:40px;
+}
+
+
+/* Bottom Section */
+
+.toma-bottom{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  width:100%;
+  gap:10px; 
+}
+
+
+/* Price Image */
+
+.toma-price img{
+  width:160px;
+  height:auto;
+  display:block;
+}
+
+
+/* Buy Button */
+
+.toma-button{
+  cursor:pointer;
+  display:inline-block;
+  transition:transform 0.3s ease, opacity 0.3s ease;
+}
+
+.toma-button img{
+  width:170px;
+  height:auto;
+  display:block;
+  transition:transform 0.3s ease, opacity 0.3s ease;
+}
+
+.toma-button:hover img{
+  transform:scale(1.05);
+  opacity:0.9;
+}
+
+
+/* Tablet */
+
+@media (max-width:768px){
+
+.toma-container{
+  max-width:380px;
+}
+
+.toma-image img{
+  max-width:240px;
+}
+
+.toma-price img{
+  width:150px;
+}
+
+.toma-button img{
+  width:160px;
+}
+
+}
+
+
+/* Mobile */
+
+@media (max-width:480px){
+
+.toma-section{
+  padding:30px 16px;
+}
+
+.toma-container{
+  max-width:100%;
+}
+
+.toma-badge img{
+  width:120px;
+}
+
+.toma-title img{
+  max-width:220px;
+}
+
+.toma-desc img{
+  max-width:260px;
+}
+
+.toma-image img{
+  max-width:210px;
+}
+
+.toma-price img{
+  width:130px;
+}
+
+.toma-button img{
+  width:140px;
+}
+
+.toma-bottom{
+  flex-direction:row;
+  justify-content:space-between;
+}
+
+}
